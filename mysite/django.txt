@@ -1,0 +1,63 @@
+pip freeze > requirements.txt
+pip -r requirements.txt automatyczna aktualizacja do wymagan projektu
+
+MVC - model, view, controller - > w django MTV model template view
+template pozwala na wyswietlanie danych
+
+python manage.py runserver - runs a server
+python manage.py startapp [nazwa_aplikacji]
+
+
+python manage.py shell - odpali nam interpreter pythona od razu z zaladowanym projektem
+
+
+ogarn¹æ sobie co ja wlasciwie zrobilem z tym templatem i o co tu chodzi
+powtorzyc sobie i zrozumiec
+
+napisac listy dla reszty modulow
+
+???????????????????????????????????
+render class - views
+go through models / views / documentation
+named groups
+
+JINJA FILTERS // SCRIPTS
+
+
+pythonprogramming.net - useful site
+
+ipython
+
+CDN
+
+static directories are publicly aviable
+
+wyrazenia regularne
+
+from django.db import models ##co to
+
+!!!!!!!!!!!
+JINJA - there are variables and a lot more stuff
+extending for restricted uses, things that will be there always
+
+including for short snippets of text, there may be a lot if includes
+
+django automatically adds id of the objects
+<pk> stands for id - primary key
+
+////////////////
+templates
+generic views + -- doc
+forms -- doc ~~~~
+queryset
+shell playing -- doc
+szczegolowo o szablonach
+django configuration
+zabawa z facebookiem
+pliki statyczne / bootstrap
+ekrany logowania
+przyslanianie aplikacji
+class Meta - uprawnienia dla uzytkownikow
+logowanie . zakladanie konta
+REST API
+
