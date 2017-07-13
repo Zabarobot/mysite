@@ -1,0 +1,20 @@
+{%  extends "personal/header.html" %}
+
+
+
+{%  block content %}
+
+    {% for book in object_list %}
+        <li> <a href="{% url 'shelf:book-detail' book.id %}">
+            {{ book.title }} </a> -
+            {% for author in book.authors.all %}
+                {{ author.first_name }} {{ author.last_name }}
+                {% if not forloop.last %},{% endif %} <!-- forloop!!! -->
+                {% endfor %}
+
+
+         </li>
+     {% endfor %}
+
+
+{%  endblock %}
