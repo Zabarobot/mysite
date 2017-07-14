@@ -46,6 +46,13 @@
 				<li><a href='/blog/'>Blog</a></li>
 				<li><a href='/contact/'>Contact</a></li>
 				<li><a href='/shelf'>Shelf</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'account_logout' %}">Log Out</a></li>
+                 {% else %}
+                <li><a href="{% url 'account_login' %}">Log In</a></li>
+                <li><a href="{% url 'account_signup' %}">Sign In</a></li>
+                {% endif %}
+
 			  </ul>
 			</div> <!--well bs-sidebar affix-->
 		  </div> <!--col-sm-2-->

@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls')),
     url(r'^', include('personal.urls')),
     url(r'^contact/$', MessageAddView.as_view()),
-    url(r'^shelf/', include('shelf.urls', namespace='shelf'))
+    url(r'^shelf/', include('shelf.urls', namespace='shelf')),
+    url(r'^accounts/', include('allauth.urls')),
 ]
