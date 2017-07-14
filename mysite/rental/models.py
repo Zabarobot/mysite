@@ -1,13 +1,14 @@
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
 from django.db import models
 from datetime import datetime
 from django.utils.timezone import now
+from django.conf import settings
 
 from shelf.models import BookItem
 
 
 class Rental(models.Model):
-    who = models.ForeignKey(User)
+    who = models.ForeignKey(settings.AUTH_USER_MODEL)  #'django.contrib.auth.user'
     what = models.ForeignKey(BookItem)
     when = models.DateTimeField(default=now)
     returned = models.DateTimeField(null=True, blank=True)
